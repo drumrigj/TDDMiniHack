@@ -1,7 +1,7 @@
 # TDDMiniHack
 A quick and dirty intro into the wild and wonderful world of test driven development.  
 
-__If you would like to do this mini-hack, please either fork this example to your own repo, or just download the zip of this. This will keep the master branch clean and unaltered and allow others in the furture to try this mini-hack too!__ :wink:
+__If you would like to do this mini-hack, please either fork this example to your own repo, or just download the zip of this. This will keep the master branch clean and unaltered and allow others in the future to try this mini-hack too!__ :wink:
 
 ##Intro  
 ####The Basics
