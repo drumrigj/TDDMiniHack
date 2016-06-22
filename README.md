@@ -1,7 +1,7 @@
 # TDDMiniHack
 A quick and dirty intro into the wild and wonderful world of test driven development.  
 
-__If you would like to do this mini-hack, please either fork this example to your own repo, or just download the zip of this. This will keep the master branch clean and unaltered and allow others in the future to try this mini-hack too!__ :wink:
+__If you would like to do this mini-hack, please either fork this example to your own repo, or if you don't have a GitHub account you can just click on the **Download ZIP** under the **Clone or download** button.__ :wink:
 
 ##Intro  
 ####The Basics
@@ -40,11 +40,13 @@ You can find more information at http://www.jamesshore.com/Blog/Red-Green-Refact
 ####Enough talk, lets code already!
 In our example, we will be creating an application that tracks "projects", and the duration of a project. The basic starting point for the application is include here, and the steps to follow are posted below.  
 
+I would suggest just having the user create their own project and add the nunit framework from nuget...instead of them being done for them.
+
 ##Steps
 0) This example uses Nunit for testing. In Visual studio, if you have Resharper installed, you can use the built in Resharper testing tools to run the tests. If you do not have Resharper installed, you can install the Nunit test adapter.  
 Right click the test project -> manage nuget packages -> search "nunit" -> NUnitTestAdapter -> Install  
 
-1) Our first step will be to set up a "Must Pass" test. This is mainly just a sanity check to make sure we are starting out on the right foot with testing. In the test project, lets add our first test...
+1) Our first step will be to set up a "Must Pass" test. This is mainly just a sanity check to make sure we are starting out on the right foot with testing. In the TDDMiniHack.Tests project, lets add our first test in UnitTests declaration (UnitTests.cs)...
 ```c#
 [Test]
 public void MustPass()
@@ -59,7 +61,12 @@ public void MustPass()
 }
 ```
 
+tell them to run the test and how.
+
 2) Now that we know our test project is working, we can actually get into the meat of our application. Lets start by creating a test to make sure new projects are active when they are first created. However, we won't start by creating a project class. We will start with a test to make sure a project is active when it is created.
+
+need to be more clear here...IsActive should be set when a new project is .Start(ed) not when it is created. that would be a different implmentation.
+
 ```c#
 [Test]
 public void WhenProjectStartedIsActive()
